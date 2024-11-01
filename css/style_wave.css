@@ -71,7 +71,14 @@ body {
     margin-bottom: 20px;
 }
 
-.indicator, .forecast, .workcation {
+.indicator {
+	border-radius: 8px;
+	margin-top: 15px;
+	-webkit-box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.45);
+    box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.45);
+}
+
+.indicator_title, .forecast, .workcation {
     background: #e0f2f1;
     padding: 0px 5px 0px 5px;
     border-radius: 8px;
@@ -83,7 +90,9 @@ body {
 }
 
 .workcation {
-	margin-top: 10px;
+	margin-top: 20px;
+	-webkit-box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.45);
+    box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.45);
 }
 
 .workcation:hover {
@@ -102,12 +111,13 @@ body {
 }
 
 .indicator_forecast_flex {
-	background: #e0f2f1;
+    background: #e0f2f1;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border: 1px solid #4db6ac;
     border-radius: 8px;
+    margin-top: 5px;
 }
 
 .indicator_forecast_flex img {
@@ -146,8 +156,11 @@ body {
 }
 
 .player {
+	display: flex;
+    align-items: center;
 	text-align: center;
 	background-color: var(--black-color);
+	/*width: 100%;*/
 }
 
 .player video {
@@ -167,7 +180,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    border: none;
+    border: none;    
 }
 
 @media (min-width: 768px) {
