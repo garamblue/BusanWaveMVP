@@ -157,10 +157,13 @@ body {
 
 .player {
 	display: flex;
-    align-items: center;
+        align-items: center;
 	text-align: center;
 	background-color: var(--black-color);
-	/*width: 100%;*/
+	min-width: 786px;
+	/* 가로 스크롤 */
+	overflow: auto;
+	white-space: nowrap;
 }
 
 .player video {
